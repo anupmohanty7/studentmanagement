@@ -31,7 +31,7 @@ public class StudentController {
         return studentService.saveStudent(student);
     }
 
-    @GetMapping
+    @GetMapping("/getAllStudents")
     public List<Student> getAllStudents() {
         return studentService.getAllStudents();
     }
