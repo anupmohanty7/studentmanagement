@@ -20,7 +20,10 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/students")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+	    "http://localhost:4200",
+	    "https://kaleidoscopic-sopapillas-476f37.netlify.app"
+	})
 public class StudentController {
 
     @Autowired
